@@ -5,6 +5,10 @@ COMP9321 2019 T1 Group Project: Heart Disease
 
 `data` - raw data
 
+`flask-app` - backend
+
+`client` - Vue front-end
+
 
 ## Develope plan  
 
@@ -54,8 +58,126 @@ __for MacOs:__
 ```
 > pip3 install -r requirements.txt
 ```
+# Back-end
+
+## Setting the environment  
+
+## 1. install flask-cors
+
+```
+> pip install flask-cors
+```
+
+## 2. create flask-app/app.py  
+```
+@app.route('/ping', methods=['GET'])
+def ping_pong():
+    return jsonify('pong!')
+```
+## 3. open your browser
+
+*http://localhost:5000/ping*
 
 
+# Front-end
+
+## Setting the environment  
+
+## 1. install nodeenv
+```
+pip install nodeenv==1.3.3  
+```
+
+## 2. activate the nodeenv
+```
+nodeenv env
+windows: .\env\Scripts\activate
+npm --version
+node --version
+npm list -g --depth 0
+```
+npm version:6.9.0
+node verson:v11.12.0
+vue-cli@2.9.6
 
 
+## 3. install vue-cli
+```
+npm install -g vue-cli
+```
+
+## 4. initial the vue  
+```
+vue init webpack client
+```
+
+`first three question using default`
+`Vue build`:?Runtime + Compiler  
+`Install vue-router?`:?Yes  
+`Use ESLint to lint your code?`:?Yes  
+`Pick an ESLint preset`:?Airbnb  
+`Set up unit tests`:?No  
+`Setup e2e tests with Nightwatch`:?No  
+`Should we run npm install for you after the project has been created`: Yes, use NPM 
+
+## 5. test if Vue works fire up the server
+```
+$ cd client
+$ npm run dev
+```
+
+
+## 6. Add a new component to the "client/src/components" folder called Ping.vue:
+
+```
+<template>
+  <div>
+    <p>{{ msg }}</p>
+  </div>
+</template>
+
+<script>
+export default {
+  name: 'Ping',
+  data() {
+    return {
+      msg: 'Hello!',
+    };
+  },
+};
+</script>
+```
+
+## 7. Update client/src/router/index.js to map '/' to the Ping component like:
+```
+import Vue from 'vue';
+import Router from 'vue-router';
+import Ping from '@/components/Ping';
+
+Vue.use(Router);
+
+export default new Router({
+  routes: [
+    {
+      path: '/',
+      name: 'Ping',
+      component: Ping,
+    },
+  ],
+});
+```
+
+
+# FAQ:
+## 1. * Install prebuilt node (11.12.0) ..... done.You do not have sufficient privilege to perform this operation  
+
+In windows,run as administrator,then run the commend.
+
+## 2. Why do we need Flask-CORS?  
+
+In order to make cross-origin requests - e.g., requests that originate from a different protocol, IP address, domain name, or port - you need to enable Cross Origin Resource Sharing (CORS). Flask-CORS handles this for us.
+
+## 3. Expected linebreaks to be 'LF' but found 'CRLF' linebreak-style  
+
+If you are using vscode and you are on Windows i would recommend you to click the option at the bottom-right of the window and set it to LF from CRLF. Because we should not turn off the configuration just for sake of removing errors on Windows ,Then save the file again
 
