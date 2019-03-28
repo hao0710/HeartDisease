@@ -250,9 +250,19 @@ new Vue({
 ### b. setting the router in router/index.js  
 
 
+## 16. add components/utilComponents/*  
 
+## 17. register in main.js  
 
+## 18. install chart.js  
 
+```
+npm install vue-chartjs chart.js --save
+```
+chart.js@2.8.0
+vue-chartjs@3.4.2
+
+## 19. open  *http://localhost:8080/home#/* view the chart
 
 # FAQ:
 

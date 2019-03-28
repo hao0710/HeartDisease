@@ -4,8 +4,17 @@ import 'bootstrap/dist/css/bootstrap.css';
 import Vue from 'vue';
 import App from './App';
 import router from './router';
+import Navbar from './components/utilComponents/Navbar.vue';
+import SampleChart from './components/utilComponents/SampleChart.vue';
+import VueCharts from 'vue-chartjs';
+import planetChartData from './chart-data.js';
 
 Vue.config.productionTip = false;
+
+// register global components here
+Vue.component('planetChartData', planetChartData);
+Vue.component('Navbar', Navbar);
+Vue.component('SampleChart', SampleChart);
 
 /* eslint-disable no-new */
 new Vue({
