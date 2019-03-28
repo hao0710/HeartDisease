@@ -242,6 +242,16 @@ new Vue({
 </style>
 ```
 
+## 14. run app.py and npm run dev
+
+## 15. add the home page vue  
+
+### a. write the home component in components/Home.vue   
+### b. setting the router in router/index.js  
+
+
+
+
 
 
 # FAQ:
