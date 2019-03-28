@@ -167,8 +167,51 @@ export default new Router({
 });
 ```
 
+## 8. To connect the client-side Vue app with the back-end Flask app, we can use the axios library to send AJAX requests.
+
+```
+npm install axios
+```
+axios@0.18.0
+
+## 9.Update the script section of the component, in Ping.vue, like so:
+```
+<script>
+import axios from 'axios';
+
+export default {
+  name: 'Ping',
+  data() {
+    return {
+      msg: '',
+    };
+  },
+  methods: {
+    getMessage() {
+      const path = 'http://localhost:5000/ping';
+      axios.get(path)
+        .then((res) => {
+          this.msg = res.data;
+        })
+        .catch((error) => {
+          // eslint-disable-next-line
+          console.error(error);
+        });
+    },
+  },
+  created() {
+    this.getMessage();
+  },
+};
+</script>
+```
+
+## 10.Fire up the Flask app in a new terminal window. You should see pong! in the browser at http://localhost:8080. Essentially, after we get back a response from the back-end, we set msg to the value of data from the response object.
+
+
 
 # FAQ:
+
 ## 1. * Install prebuilt node (11.12.0) ..... done.You do not have sufficient privilege to perform this operation  
 
 In windows,run as administrator,then run the commend.
@@ -180,4 +223,9 @@ In order to make cross-origin requests - e.g., requests that originate from a di
 ## 3. Expected linebreaks to be 'LF' but found 'CRLF' linebreak-style  
 
 If you are using vscode and you are on Windows i would recommend you to click the option at the bottom-right of the window and set it to LF from CRLF. Because we should not turn off the configuration just for sake of removing errors on Windows ,Then save the file again
+
+
+
+## Reference:
+*https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/*
 
