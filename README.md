@@ -208,6 +208,40 @@ export default {
 
 ## 10.Fire up the Flask app in a new terminal window. You should see pong! in the browser at http://localhost:8080. Essentially, after we get back a response from the back-end, we set msg to the value of data from the response object.
 
+## 11.install the bootstrap  
+```
+npm install bootstrap
+```
+bootstrap@4.3.1
+
+## 12.Import the Bootstrap styles to client/src/main.js:
+
+```
+import 'bootstrap/dist/css/bootstrap.css';
+import Vue from 'vue';
+import App from './App';
+import router from './router';
+
+Vue.config.productionTip = false;
+
+/* eslint-disable no-new */
+new Vue({
+  el: '#app',
+  router,
+  components: { App },
+  template: '<App/>',
+});
+```
+
+## 13. Update the style section in client/src/App.vue:
+```
+<style>
+#app {
+  margin-top: 60px
+}
+</style>
+```
+
 
 
 # FAQ:
