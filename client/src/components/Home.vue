@@ -1,5 +1,6 @@
 <template>
   <div>
+    <Naviibar></Naviibar>
     <Navbar></Navbar>
     <SampleChart></SampleChart>
     <p>{{ msg }}</p>

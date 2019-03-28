@@ -14,8 +14,12 @@ export default {
     return {
       msg: 'I am the nav component',
       items: [
-        { name: 'Coolperson' },
-        { name: 'Coolperson2' },
+        { name: 'Nav1' },
+        { name: 'Nav2' },
+        { name: 'Nav3' },
+        { name: 'Nav4' },
+        { name: 'Nav5' },
+        { name: 'Nav6' },
       ],
     };
   },

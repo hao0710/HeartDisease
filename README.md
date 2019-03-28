@@ -264,6 +264,27 @@ vue-chartjs@3.4.2
 
 ## 19. open  *http://localhost:8080/home#/* view the chart
 
+## 20. install  bootstrap vue
+```
+npm i vue bootstrap-vue bootstrap
+```
+bootstrap-vue@2.0.0-rc.16
+vue@2.6.10
+
+## 21. register BootstrapVue plugin in your app entry point:
+```
+// app.js
+import Vue from 'vue'
+import BootstrapVue from 'bootstrap-vue'
+
+Vue.use(BootstrapVue)
+And import Bootstrap and BootstrapVue css files:
+
+// app.js
+import 'bootstrap/dist/css/bootstrap.css'
+import 'bootstrap-vue/dist/bootstrap-vue.css'
+```
+
 # FAQ:
 
 ## 1. * Install prebuilt node (11.12.0) ..... done.You do not have sufficient privilege to perform this operation  

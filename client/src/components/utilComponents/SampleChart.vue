@@ -1,6 +1,6 @@
 <template>
   <div>
-    <canvas id="planet-chart"></canvas>
+    <canvas id="planet-chart" style="position: relative; height:20vh; width:40vw"></canvas>
   </div>
 </template>
 
