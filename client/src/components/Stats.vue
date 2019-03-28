@@ -1,22 +1,13 @@
 <template>
-  <div>
-    
-    <!--<Carousel></Carousel>-->
-    <Navbar></Navbar>
-    <SampleChart></SampleChart>
-    <p>{{ msg }}</p>
-    <router-link to="/stats">Go to stats</router-link>
-    <router-view/>
-  </div>
+  <p>{{ msg }}</p>
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
+  name: 'Stats',
   data() {
     return {
-      msg: 'I am the home component',
+      msg: 'I am the stats component',
     };
   },
 };

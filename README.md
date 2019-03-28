@@ -283,6 +283,14 @@ And import Bootstrap and BootstrapVue css files:
 // app.js
 import 'bootstrap/dist/css/bootstrap.css'
 import 'bootstrap-vue/dist/bootstrap-vue.css'
+
+```
+
+## 22. Move the Navibar to App.vue:
+
+## 23. Setting the stats path in Navi.vue and index.js
+```
+<b-nav-item href="#/stats">Stats</b-nav-item>
 ```
 
 # FAQ:

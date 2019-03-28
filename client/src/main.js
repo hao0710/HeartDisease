@@ -9,6 +9,7 @@ import router from './router';
 import Navbar from './components/utilComponents/Navbar.vue';
 import SampleChart from './components/utilComponents/SampleChart.vue';
 import Naviibar from './components/Naviibar.vue';
+import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
 import planetChartData from './chart-data.js';
 
@@ -21,6 +22,7 @@ Vue.component('planetChartData', planetChartData);
 Vue.component('Navbar', Navbar);
 Vue.component('SampleChart', SampleChart);
 Vue.component('Naviibar', Naviibar);
+Vue.component('Carousel', Carousel);
 
 /* eslint-disable no-new */
 new Vue({

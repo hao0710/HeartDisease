@@ -1,5 +1,6 @@
 <template>
   <div id="app">
+    <Naviibar></Naviibar>
     <!--<img src="./assets/logo.png">-->
     <router-view/>
   </div>
