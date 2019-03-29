@@ -1,16 +1,18 @@
 <template>
 
   <div>
-    <canvas id="planet-chart" style="position: relative; height:40vh; width:40vw"></canvas>
+    <canvas id="planet-chart1" style="position: relative; height:40vh; width:40vw"></canvas>
     <!--<canvas id="planet-chart" width="447" height="250" style="position: relative;width: 179px; height: 100px;"></canvas>-->
   </div>
+  
+
 </template>
 
 <script>
-import planetChartData from '../../chart-data.js';
+import planetChartData from '../../chart-data1.js';
 
 export default {
-  name: 'SampleChart',
+  name: 'SampleChart1',
   data() {
     return {
       planetChartData: planetChartData,
@@ -27,7 +29,7 @@ export default {
     },
   },
   mounted() {
-    this.createChart('planet-chart', this.planetChartData);
+    this.createChart('planet-chart1', this.planetChartData);
   },
 };
 </script>

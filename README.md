@@ -354,6 +354,10 @@ def all_datasets():
 
 ## 28. preprocess the data and to json form
 
+## 29. add background color in app.vue and set different background in stats.vue  
+
+## 30. add another pie-chart  
+
 
 # FAQ:
 
@@ -368,6 +372,14 @@ In order to make cross-origin requests - e.g., requests that originate from a di
 ## 3. Expected linebreaks to be 'LF' but found 'CRLF' linebreak-style  
 
 If you are using vscode and you are on Windows i would recommend you to click the option at the bottom-right of the window and set it to LF from CRLF. Because we should not turn off the configuration just for sake of removing errors on Windows ,Then save the file again
+
+## 4. Vue-cli setting backgroudcolor for specific page  
+add wrapper  
+```
+.wrapper{
+  background-color: #ffffff;
+}
+```
 
 
 

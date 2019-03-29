@@ -1,4 +1,5 @@
 <template>
+<div class="wrapper">
   <div class="container">
     <div class="row">
       <div v-bind:class="col-sm-10">
@@ -54,6 +55,7 @@
       </div>
     </div>
   </div>
+</div>
 </template>
 
 <script>
@@ -86,10 +88,17 @@ export default {
 
 
 <style scoped>
+
+.wrapper{
+  background-color: #ffffff;
+}
+
 .container {
-    width: 100%;
+    
+    /*width: 100%;
+    height: 100%;*/
     padding-right: 15px;
-    padding-left: 15px;
+    padding-left:  15px;
     margin-right: 10px;
     margin-left: 10px;
 }
@@ -111,4 +120,5 @@ li {
 a {
   color: #42b983;
 }
+
 </style>
