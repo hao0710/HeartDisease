@@ -13,6 +13,7 @@
         <table class="table table-hover">
           <thead>
             <tr>
+              <th scope="col">Index</th>
               <th scope="col">Age</th>
               <th scope="col">Sex</th>
               <th scope="col">Chest Pain Type</th>
@@ -26,12 +27,13 @@
               <th scope="col">The Slope of the Peak Exercise ST segment</th>
               <th scope="col">Number of Major Vessels (0-3) colored by Flourosopy</th>
               <th scope="col">Thalassemia</th>
-              <th scope="col">Target</th>
+              <th scope="col">Target:have disease</th>
               <th></th>
             </tr>
           </thead>
           <tbody>
             <tr v-for="(data, index) in datasets" :key="index">
+              <td>{{ index+1 }}</td>
               <td>{{ data.age }}</td>
               <td>{{ data.sex }}</td>
               <td>{{ data.chest }}</td>
