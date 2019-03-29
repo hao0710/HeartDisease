@@ -293,6 +293,66 @@ import 'bootstrap-vue/dist/bootstrap-vue.css'
 <b-nav-item href="#/stats">Stats</b-nav-item>
 ```
 
+## 24. modify the Stats.vue add the table and write scripts to get data
+
+## 25. Add a list of books to server/app.py:
+```
+Datasets = [
+    {
+        'age': '63',
+        'sex': 'male',
+        'chest': 'typical',
+        'pressure':'145',
+        'cholestoral':'233',
+        'sugar':'yes',
+        'cardiographic':'probable or definite',
+        'heart_rate':'150',
+        'angina':'0',
+        'oldpeak':'2.3',
+        'slope':'3',
+        'flourosopy':'0',
+        'thal':'fixed defect',
+        'target':'no'
+    },
+]
+```
+
+## 26. Add the route handler:  
+```
+@app.route('/datasets', methods=['GET'])
+def all_datasets():
+    return jsonify({
+        'status': 'success',
+        'datasets': Datasets
+    })
+```
+
+## 27. check the http://localhost:5000/datasets  got the json data
+```
+{
+  "datasets": [
+    {
+      "age": "63", 
+      "angina": "0", 
+      "cardiographic": "probable or definite", 
+      "chest": "typical", 
+      "cholestoral": "233", 
+      "flourosopy": "0", 
+      "heart_rate": "150", 
+      "oldpeak": "2.3", 
+      "pressure": "145", 
+      "sex": "male", 
+      "slope": "3", 
+      "sugar": "yes", 
+      "target": "no", 
+      "thal": "fixed defect"
+    }, 
+  ], 
+  "status": "success"
+}
+```
+
+
 # FAQ:
 
 ## 1. * Install prebuilt node (11.12.0) ..... done.You do not have sufficient privilege to perform this operation  
