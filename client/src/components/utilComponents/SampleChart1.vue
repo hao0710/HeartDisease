@@ -1,11 +1,7 @@
 <template>
-
   <div>
     <canvas id="planet-chart1" style="position: relative; height:40vh; width:40vw"></canvas>
-    <!--<canvas id="planet-chart" width="447" height="250" style="position: relative;width: 179px; height: 100px;"></canvas>-->
   </div>
-  
-
 </template>
 
 <script>

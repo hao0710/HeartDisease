@@ -16,7 +16,17 @@ export const planetChartData = {
         //   'rgba(54,73,93,.5)',
         //   'rgba(54,73,93,.5)',
         // ],
-        backgroundColor:['#F7464A','#46BFBD','#FDB45C','#FEDCBA','#ABCDEF','#DDDDDD','#ABCABC','#AC58FA'] ,
+        backgroundColor: [
+          '#F7464A',
+          '#46BFBD',
+          '#FDB45C',
+          '#FEDCBA',
+          '#ABCDEF',
+          '#DDDDDD',
+          '#ABCABC',
+          '#AC58FA',
+        ],
+
         borderColor: [
           '#36495d',
           '#36495d',

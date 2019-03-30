@@ -3,11 +3,6 @@
     
     <!--<Carousel></Carousel>-->
     <!--<Navbar></Navbar>-->
-  <div>
-  <b-jumbotron header="Heart Disease Analysis" lead="Predict heart disease using machine learning">
-    <b-button variant="primary" href="#/planet">Predict</b-button>
-  </b-jumbotron>
-</div>
   <div class="row">
       <div class="col-md-6">
           <div class="tile">
@@ -22,24 +17,6 @@
           </div>
       </div>
   </div>
-
-  <div class="row">
-      <div class="col-md-6">
-          <div class="tile">
-            <div class="tile-card">
-              <Card></Card>
-            </div>
-          </div>
-      </div>
-      <div class="col-md-6">
-          <div class="tile">
-            <div class="tile-card">
-              <Card></Card>
-            </div>
-          </div>
-      </div>
-  </div>
-  
     <p>{{ msg }}</p>
     <router-link to="/stats">Go to stats</router-link>
     <router-view/>
@@ -49,10 +26,10 @@
 <script>
 
 export default {
-  name: 'Home',
+  name: 'Planet',
   data() {
     return {
-      msg: 'I am the home component',
+      msg: 'I am the planet component',
     };
   },
 };
@@ -70,9 +47,9 @@ li {
   display: inline-block;
   margin: 0 10px;
 }
-/*{
+a {
   color: #42b983;
-}*/
+}
 
 .tile {
     position: relative;
