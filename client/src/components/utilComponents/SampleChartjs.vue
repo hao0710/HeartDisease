@@ -1,6 +1,6 @@
 <template>
   <div class="chartjs">
-    <canvas :id="CHART_ID"></canvas>
+    <canvas :id="CHART_ID" style="position: relative; height:40vh; width:40vw"></canvas>
   </div>
 </template>
 

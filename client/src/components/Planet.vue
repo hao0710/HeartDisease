@@ -39,8 +39,8 @@
       </div>
       <div class="col-md-6">
           <div class="tile">
-              <h3 class="tile-title">Planet Pie</h3>
-              <SampleVueChartjs></SampleVueChartjs>
+              <h3 class="tile-title">Resting Blood Pressure</h3>
+              <SampleVueScatter></SampleVueScatter>
           </div>
       </div>
   </div>

@@ -12,6 +12,7 @@ import SampleChart from './components/utilComponents/SampleChart.vue';
 import SampleChart1 from './components/utilComponents/SampleChart1.vue';
 import SampleChartjs from './components/utilComponents/SampleChartjs.vue';
 import SampleVueChartjs from './components/utilComponents/SampleVueChartjs.vue';
+import SampleVueScatter from './components/utilComponents/SampleVueScatter.vue';
 import Requestdata from './components/utilComponents/Requestdata.vue';
 import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
@@ -32,6 +33,7 @@ Vue.component('Card', Card);
 Vue.component('SampleChartjs', SampleChartjs);
 Vue.component('SampleVueChartjs', SampleVueChartjs);
 Vue.component('Requestdata', Requestdata);
+Vue.component('SampleVueScatter', SampleVueScatter);
 
 
 /* eslint-disable no-new */

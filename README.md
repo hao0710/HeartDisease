@@ -371,7 +371,9 @@ Reference:
 
 *https://api.npmjs.org/downloads/range/2017-01-01:2017-04-19/vue*  
 
+## 33. Add Vue-scatter  
 
+## 34. add sample Resting Blood Pressure data   
 
 # FAQ:
 
