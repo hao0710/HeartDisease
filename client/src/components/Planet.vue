@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <!--<Carousel></Carousel>-->
     <!--<Navbar></Navbar>-->
   <div class="row">
@@ -14,6 +13,34 @@
           <div class="tile">
               <h3 class="tile-title">Planet Pie</h3>
               <SampleChart1></SampleChart1>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Color Vote by Chartjs</h3>
+              <SampleChartjs></SampleChartjs>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Color Vote by VueChartjs</h3>
+              <SampleVueChartjs></SampleVueChartjs>
+          </div>
+      </div>
+  </div>
+  <div class="row">
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Npm Stats</h3>
+              <Requestdata></Requestdata>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Planet Pie</h3>
+              <SampleVueChartjs></SampleVueChartjs>
           </div>
       </div>
   </div>

@@ -1,6 +1,5 @@
 <template>
   <div>
-    
     <!--<Carousel></Carousel>-->
     <!--<Navbar></Navbar>-->
   <div>
@@ -39,7 +38,6 @@
           </div>
       </div>
   </div>
-  
     <p>{{ msg }}</p>
     <router-link to="/stats">Go to stats</router-link>
     <router-view/>

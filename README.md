@@ -358,6 +358,20 @@ def all_datasets():
 
 ## 30. add another pie-chart  
 
+## 31. Test the chartjs and VueChartjs  
+
+## 32. Test npm stats  
+Reference:
+
+*http://npm-stats.org/#/*
+
+*https://github.com/apertureless/npm-stats*
+
+*https://hackernoon.com/lets-build-a-web-app-with-vue-chart-js-and-an-api-544eb81c4b44*  
+
+*https://api.npmjs.org/downloads/range/2017-01-01:2017-04-19/vue*  
+
+
 
 # FAQ:
 

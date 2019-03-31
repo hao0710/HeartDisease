@@ -10,13 +10,17 @@ import Naviibar from './components/utilComponents/Naviibar.vue';
 import Card from './components/utilComponents/Card.vue';
 import SampleChart from './components/utilComponents/SampleChart.vue';
 import SampleChart1 from './components/utilComponents/SampleChart1.vue';
+import SampleChartjs from './components/utilComponents/SampleChartjs.vue';
+import SampleVueChartjs from './components/utilComponents/SampleVueChartjs.vue';
+import Requestdata from './components/utilComponents/Requestdata.vue';
 import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
 import planetChartData from './chart-data.js';
 
 Vue.config.productionTip = false;
 
-Vue.use(BootstrapVue)
+Vue.use(BootstrapVue);
+Vue.use(VueCharts);
 
 // register global components here
 Vue.component('planetChartData', planetChartData);
@@ -25,6 +29,10 @@ Vue.component('SampleChart1', SampleChart1);
 Vue.component('Naviibar', Naviibar);
 Vue.component('Carousel', Carousel);
 Vue.component('Card', Card);
+Vue.component('SampleChartjs', SampleChartjs);
+Vue.component('SampleVueChartjs', SampleVueChartjs);
+Vue.component('Requestdata', Requestdata);
+
 
 /* eslint-disable no-new */
 new Vue({

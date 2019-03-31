@@ -9,8 +9,6 @@
         <button type="button" class="btn btn-success btn-sm">Add Book</button>
         -->
         <br>
-
-        
         <table class="table table-hover">
           <thead>
             <tr>
@@ -94,7 +92,6 @@ export default {
 }
 
 .container {
-    
     /*width: 100%;
     height: 100%;*/
     padding-right: 15px;

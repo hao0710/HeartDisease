@@ -1,5 +1,5 @@
 export const planetChartData = {
-  type: 'line',// doughnut bar radar scatter bubble polarArea
+  type: 'line', // doughnut bar radar scatter bubble polarArea
   data: {
     labels: ['Mercury', 'Venus', 'Earth', 'Mars', 'Jupiter', 'Saturn', 'Uranus', 'Neptune'],
     datasets: [
