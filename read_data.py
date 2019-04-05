@@ -16,10 +16,11 @@ def clean_data():
 		'cardiographic','heart_rate','angina','oldpeak','slope','flourosopy','thal','target']		 
 	df = pd.read_csv(path, delimiter=',',float_precision='high',header=None,names=names)
 	df=df.drop(df[(df['thal']=='?')|(df['flourosopy']=='?')].index)
+	df.iloc[:,1]= df.iloc[:,1].map(lambda x: 1 if x == 1 else 0)
+	df.iloc[:,13]= df.iloc[:,13].map(lambda x: 0 if x == 0 else 1)
 	df['log_pressure'] = np.log(df['pressure'])
 	df['log_cholestoral']=np.log(df['cholestoral'])
 	df['log_age']=np.log(df['age'])
 	df['log_heart_rate']=np.log(df['heart_rate'])
 	return df
-data=clean_data()
 
