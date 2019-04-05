@@ -22,4 +22,6 @@ def clean_data():
     df['log_cholestoral']=np.log(df['cholestoral'])
     df['log_age']=np.log(df['age'])
     df['log_heart_rate']=np.log(df['heart_rate'])
+    df=df[['age','log_age','sex','chest','pressure','log_pressure','cholestoral','log_cholestoral','sugar',\
+        'cardiographic','heart_rate','log_heart_rate','angina','oldpeak','slope','flourosopy','thal','target']]
     return df
