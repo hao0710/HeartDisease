@@ -3,6 +3,10 @@
   <div class="container">
     <div class="row">
       <div v-bind:class="col-sm-10">
+        <hr>
+        <hr>
+        <hr>
+        <hr>
         <h1>Heart Disease Dataset</h1>
         <!--
         <hr><br><br>

@@ -2,6 +2,8 @@
   <div>
     <!--<Carousel></Carousel>-->
     <!--<Navbar></Navbar>-->
+  <hr>
+  <hr>
   <div>
   <b-jumbotron header="Heart Disease Analysis" lead="Predict heart disease using machine learning">
     <b-button variant="primary" href="#/planet">Predict</b-button>

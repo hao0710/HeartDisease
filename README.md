@@ -125,7 +125,7 @@ vue init webpack client
 $ cd client
 $ npm run dev
 ```
-
+http://localhost:8080/#/
 
 ## 6. Add a new component to the "client/src/components" folder called Ping.vue:
 
@@ -374,6 +374,103 @@ Reference:
 ## 33. Add Vue-scatter  
 
 ## 34. add sample Resting Blood Pressure data   
+
+## 35. add  faxios.js to seperate the axios data from the chatData1  
+
+   TODO:  havent't figure out yet!!!
+
+## 36. make the header of the stats table fixed
+
+   TODO:  havent't figure out yet!!!
+   
+## 37. make the Navibar fixed 
+
+  add the `fixed="top"` attribute to *Naviibar.vue*  to make the navi bar always on the top
+
+  problem : the navibar hide the stats title
+
+  solution: add some <hr>  
+
+
+## 38. Write the predict page
+  
+
+  button `variant="info"` change the button color  
+
+  button '`click="onSubmit" `  call the js function  
+
+  remember change the name of `name="radio-options"` when multiples
+
+  ```
+INFO=[]
+@app.route('/datasets/submit', methods=['GET','POST'])
+def submit():  
+  global INFO
+  response_object = {'status': 'success'}
+  if request.method == 'POST':
+    post_data = request.get_json()
+    print(post_data)
+    # print(post_data.get('selected'))
+    # BOOKS.append({
+    #     'gender': post_data.get('gender'),
+    # })
+    INFO=[]
+    INFO.append(post_data)
+    print()
+  else:
+    response_object['info'] = INFO
+  return jsonify(response_object)
+
+  ```
+
+  ```
+  methods: {
+    addBook(payload) {
+      const path = "http://localhost:5000/datasets/submit";
+      axios
+        .post(path, payload)
+        .then(function(response) {
+          console.log(response);
+        })
+        .catch(function(error) {
+          console.log(error);
+        });
+    },
+
+    onSubmit(evt) {
+      evt.preventDefault();
+      const payload = {
+        gender: this.selected,
+        age: this.age,
+        selected_pain: this.selected_pain,
+        bloodpressure: this.bloodpressure,
+        cholestoral: this.cholestoral,
+        selected_bloodsugar: this.selected_bloodsugar,
+        heart_rate: this.heart_rate,
+        selected_slope: this.selected_slope,
+        selected_angina: this.selected_angina,
+        oldpeak: this.oldpeak,
+        selected_ca: this.selected_ca,
+        selected_electrocardiographic: this.selected_electrocardiographic
+      };
+      this.addBook(payload);
+    }
+  },
+  ```
+
+
+  Reference:  
+  
+  https://bootstrap-vue.js.org/docs/components/form-radio#grouped-radios
+
+  https://getbootstrap.com/docs/4.1/components/buttons/#methods
+
+  http://www.cvdcheck.org.au/calculator/
+
+
+
+
+
 
 # FAQ:
 

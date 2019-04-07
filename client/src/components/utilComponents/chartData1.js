@@ -1,19 +1,9 @@
+import {data1} from './faxios';
 export const data = {
   labels: ['Red', 'Blue', 'Yellow', 'Green', 'Purple', 'Orange'],
   datasets: [{
     label: 'female',
-    data: [{
-      x: 41,
-      y: 130,
-    },
-    {
-      x: 62,
-      y: 140,
-    },
-    {
-      x: 57,
-      y: 120,
-    }],
+    data:data1.data,
     backgroundColor: 'rgba(255, 99, 132, 0.2)',
     borderColor: 'rgba(255,99,132,1)',
     borderWidth: 3,

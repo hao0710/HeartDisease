@@ -4,6 +4,8 @@ import Ping from '@/components/Ping';
 import Home from '@/components/Home';
 import Planet from '@/components/Planet';
 import Stats from '@/components/Stats';
+import Predict from '@/components/Predict';
+import Test from '@/components/Test';
 
 Vue.use(Router);
 
@@ -28,6 +30,16 @@ export default new Router({
       path: '/planet',
       name: 'Planet',
       component: Planet,
+    },
+    {
+      path: '/predict',
+      name: 'Predict',
+      component: Predict,
+    },
+    {
+      path: '/test',
+      name: 'Test',
+      component: Test,
     },
   ],
 });
