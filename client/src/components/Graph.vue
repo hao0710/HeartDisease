@@ -4,22 +4,20 @@
     <!--<Navbar></Navbar>-->
   <hr>
   <hr>
-  <div>
-  <b-jumbotron header="Heart Disease Analysis" lead="Predict heart disease using machine learning">
-    <b-button variant="primary" href="#/predict">Predict</b-button>
+  <b-jumbotron header="visualize the statistics for basic information" lead="by groups of
+age and sex">
   </b-jumbotron>
-</div>
   <div class="row">
       <div class="col-md-6">
           <div class="tile">
-              <h3 class="tile-title">Planet Line</h3>
-              <SampleChart></SampleChart>
+              <h3 class="tile-title">Resting Blood Pressure</h3>
+              <BloodPressureVueScatter></BloodPressureVueScatter>
           </div>
       </div>
       <div class="col-md-6">
           <div class="tile">
-              <h3 class="tile-title">Planet Pie</h3>
-              <SampleChart1></SampleChart1>
+              <h3 class="tile-title">Serum Cholestoral in mg/dl</h3>
+              <CholestoralVueScatter></CholestoralVueScatter>
           </div>
       </div>
   </div>
@@ -27,19 +25,34 @@
   <div class="row">
       <div class="col-md-6">
           <div class="tile">
-            <div class="tile-card">
-              <Card></Card>
-            </div>
+              <h3 class="tile-title">Maximum Heart Rate Achieved</h3>
+              <HeartRateVueScatter></HeartRateVueScatter>
           </div>
       </div>
       <div class="col-md-6">
           <div class="tile">
-            <div class="tile-card">
-              <Card></Card>
-            </div>
+              <h3 class="tile-title">Oldpeak</h3>
+              <OldpeakVueScatter></OldpeakVueScatter>
           </div>
       </div>
   </div>
+
+  <div class="row">
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Chest Pain Type</h3>
+              <ChestPainVueBar></ChestPainVueBar>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Oldpeak</h3>
+              <OldpeakVueScatter></OldpeakVueScatter>
+          </div>
+      </div>
+  </div>
+
+  
     <p>{{ msg }}</p>
     <router-link to="/stats">Go to stats</router-link>
     <router-view/>

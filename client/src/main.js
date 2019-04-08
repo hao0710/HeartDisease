@@ -13,6 +13,11 @@ import SampleChart1 from './components/utilComponents/SampleChart1.vue';
 import SampleChartjs from './components/utilComponents/SampleChartjs.vue';
 import SampleVueChartjs from './components/utilComponents/SampleVueChartjs.vue';
 import SampleVueScatter from './components/utilComponents/SampleVueScatter.vue';
+import BloodPressureVueScatter from './components/utilComponents/BloodPressureVueScatter.vue';
+import CholestoralVueScatter from './components/utilComponents/CholestoralVueScatter.vue';
+import HeartRateVueScatter from './components/utilComponents/HeartRateVueScatter.vue';
+import OldpeakVueScatter from './components/utilComponents/OldpeakVueScatter.vue';
+import ChestPainVueBar from './components/utilComponents/ChestPainVueBar.vue';
 import Requestdata from './components/utilComponents/Requestdata.vue';
 import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
@@ -34,6 +39,14 @@ Vue.component('SampleChartjs', SampleChartjs);
 Vue.component('SampleVueChartjs', SampleVueChartjs);
 Vue.component('Requestdata', Requestdata);
 Vue.component('SampleVueScatter', SampleVueScatter);
+Vue.component('BloodPressureVueScatter', BloodPressureVueScatter);
+Vue.component('CholestoralVueScatter', CholestoralVueScatter);
+Vue.component('HeartRateVueScatter', HeartRateVueScatter);
+Vue.component('OldpeakVueScatter', OldpeakVueScatter);
+Vue.component('ChestPainVueBar', ChestPainVueBar);
+
+
+
 
 
 /* eslint-disable no-new */

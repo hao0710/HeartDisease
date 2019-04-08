@@ -9,6 +9,7 @@
       <b-navbar-nav>
         <b-nav-item href="#/">Home</b-nav-item>
         <b-nav-item href="#/stats">Stats</b-nav-item>
+        <b-nav-item href="#/graph">Graph</b-nav-item>
         <b-nav-item href="#/predict">Predict</b-nav-item>
         <b-nav-item href="#/test">Test</b-nav-item>
         <!--<b-nav-item href="#" disabled>Disabled</b-nav-item>-->
