@@ -20,6 +20,9 @@ def clean_data():
     # df['log_heart_rate']=np.log(df['heart_rate'])
     df = df[['age','sex','chest','pressure','cholestoral','sugar',\
         'cardiographic','heart_rate','angina','oldpeak','slope','flourosopy','thal','target']]
-    print(df.head(5))
     return df
-clean_data()
+
+df = clean_data()
+# df_age = df.drop(['sex'],axis=1)
+df = df.groupby([df["age"],df["sex"]]).mean()
+print(df)
