@@ -3,7 +3,7 @@ export const data = {
   labels: ['20-40', '40-60', '60+',],
   datasets: [{
     label: '# female yes',
-    data: [1, 2, 3],
+    data: [0, 15, 7],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
       'rgba(255, 206, 86, 1)',
@@ -19,7 +19,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# female no',
-    data: [7, 8, 9],
+    data: [5, 42, 27],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
       'rgba(75, 192, 192, 0.5)',
@@ -36,7 +36,7 @@ export const data = {
   },
   {
     label: '# male yes',
-    data: [4, 5, 6],
+    data: [3, 52, 20],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
       'rgba(255, 206, 86, 1)',
@@ -52,7 +52,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# male no',
-    data: [10, 11, 12],
+    data: [6, 95, 25],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
       'rgba(75, 192, 192, 0.5)',

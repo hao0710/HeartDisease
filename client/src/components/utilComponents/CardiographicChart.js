@@ -3,7 +3,7 @@ export const data = {
   labels: ['20-40', '40-60', '60+',],
   datasets: [{
     label: '# female normal',
-    data: [1, 2, 3],
+    data: [5, 26, 1],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
       'rgba(255, 206, 86, 1)',
@@ -19,7 +19,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# female having ST-T',
-    data: [7, 8, 9],
+    data: [0, 2, 15],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
       'rgba(75, 192, 192, 0.5)',
@@ -35,7 +35,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# female probable or definite',
-    data: [13, 14, 15],
+    data: [0, 29, 18],
     backgroundColor: [
       'rgba(153, 102, 255, 0.5)',
       'rgba(153, 102, 255, 0.5)',
@@ -52,7 +52,7 @@ export const data = {
   },
   {
     label: '# male normal',
-    data: [4, 5, 6],
+    data: [5, 76, 17],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
       'rgba(255, 206, 86, 1)',
@@ -68,7 +68,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# male having ST-T',
-    data: [10, 11, 12],
+    data: [0, 1, 0],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
       'rgba(75, 192, 192, 0.5)',
@@ -84,7 +84,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# male probable or definite',
-    data: [16, 17, 18],
+    data: [4, 70, 28],
     backgroundColor: [
       'rgba(153, 102, 255, 0.5)',
       'rgba(153, 102, 255, 0.5)',

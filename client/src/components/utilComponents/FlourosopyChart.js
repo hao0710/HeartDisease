@@ -3,7 +3,7 @@ export const data = {
   labels: ['20-40', '40-60', '60+',],
   datasets: [{
     label: '# female 0',
-    data: [1, 2, 3],
+    data: [5, 43, 16],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
       'rgba(255, 206, 86, 1)',
@@ -19,7 +19,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# female 1',
-    data: [7, 8, 9],
+    data: [0, 9, 6],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
       'rgba(75, 192, 192, 0.5)',
@@ -35,7 +35,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# female 2',
-    data: [13, 14, 15],
+    data: [0, 5, 8],
     backgroundColor: [
       'rgba(153, 102, 255, 0.5)',
       'rgba(153, 102, 255, 0.5)',
@@ -52,7 +52,7 @@ export const data = {
   },
   {
     label: '# female 3',
-    data: [19, 20, 21],
+    data: [0, 0, 4],
     backgroundColor: [
       'rgba(255, 159, 64, 0.5)',
       'rgba(255, 159, 64, 0.5)',
@@ -70,7 +70,7 @@ export const data = {
   },
   {
     label: '# male 0',
-    data: [4, 5, 6],
+    data: [9, 86, 15],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
       'rgba(255, 206, 86, 1)',
@@ -86,7 +86,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# male 1',
-    data: [10, 11, 12],
+    data: [0, 36, 14],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
       'rgba(75, 192, 192, 0.5)',
@@ -102,7 +102,7 @@ export const data = {
     borderWidth: 3,
   },{
     label: '# male 2',
-    data: [16, 17, 18],
+    data: [0, 16, 9],
     backgroundColor: [
       'rgba(153, 102, 255, 0.5)',
       'rgba(153, 102, 255, 0.5)',
@@ -119,7 +119,7 @@ export const data = {
   },
   {
     label: '# male 3',
-    data: [22, 23, 24],
+    data: [0, 9, 7],
     backgroundColor: [
       'rgba(255, 159, 64, 0.5)',
       'rgba(255, 159, 64, 0.5)',
