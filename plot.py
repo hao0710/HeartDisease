@@ -195,6 +195,146 @@ def cardiographic(df):
     cardiographic_dataset = {"male":{"<40": cardiographic_m_40,"40-60": cardiographic_m_4060, ">60": cardiographic_m_60},"female":{"<40": cardiographic_f_40,"40-60": cardiographic_f_4060, ">60": cardiographic_f_60}}
     print(cardiographic_dataset)
 
+def angina(df):
+    # male>60
+    df_male_60 = df[(df['age'] > 60) & (df['sex'] == 1)]
+    df_angina_m_60 = df_male_60['angina']
+    angina_m_60 = df_angina_m_60.value_counts()
+    angina_m_60 = angina_m_60.to_json()
+    # female>60
+    df_female_60 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_angina_f_60 = df_female_60['angina']
+    angina_f_60 = df_angina_f_60.value_counts()
+    angina_f_60 = angina_f_60.to_json()
+
+    #  male 40-60
+    df_male_4060 = df[(df['age'] <= 60) & (df["age"] >=40) & (df['sex'] == 1)]
+    df_angina_m_4060 = df_male_4060['angina']
+    angina_m_4060 = df_angina_m_4060.value_counts()
+    angina_m_4060 = angina_m_4060.to_json()
+    # feamle 40-60
+    df_female_4060 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_angina_f_4060 = df_female_4060["angina"]
+    angina_f_4060 = df_angina_f_4060.value_counts()
+    angina_f_4060 = angina_f_4060.to_json()
+    # male <40
+    df_male_40 = df[(df['age'] < 40) & (df['sex'] == 1)]
+    df_angina_m_40 = df_male_40['angina']
+    angina_m_40 = df_angina_m_40.value_counts()
+    angina_m_40 = angina_m_40.to_json()
+    # feamle <40
+    df_female_40 = df[(df['age'] > 40) & (df['sex'] == 0)]
+    df_angina_f_40 = df_female_40['angina']
+    angina_f_40 = df_angina_f_40.value_counts()
+    angina_f_40 = angina_f_40.to_json()
+    angina_dataset = {"male":{"<40": angina_m_40,"40-60": angina_m_4060, ">60": angina_m_60},"female":{"<40": angina_f_40,"40-60": angina_f_4060, ">60": angina_f_60}}
+    print(angina_dataset)
+
+def slope(df):
+    # male>60
+    df_male_60 = df[(df['age'] > 60) & (df['sex'] == 1)]
+    df_slope_m_60 = df_male_60['slope']
+    slope_m_60 = df_slope_m_60.value_counts()
+    slope_m_60 = slope_m_60.to_json()
+    # female>60
+    df_female_60 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_slope_f_60 = df_female_60['slope']
+    slope_f_60 = df_slope_f_60.value_counts()
+    slope_f_60 = slope_f_60.to_json()
+
+    #  male 40-60
+    df_male_4060 = df[(df['age'] <= 60) & (df["age"] >=40) & (df['sex'] == 1)]
+    df_slope_m_4060 = df_male_4060['slope']
+    slope_m_4060 = df_slope_m_4060.value_counts()
+    slope_m_4060 = slope_m_4060.to_json()
+    # feamle 40-60
+    df_female_4060 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_slope_f_4060 = df_female_4060["slope"]
+    slope_f_4060 = df_slope_f_4060.value_counts()
+    slope_f_4060 = slope_f_4060.to_json()
+    # male <40
+    df_male_40 = df[(df['age'] < 40) & (df['sex'] == 1)]
+    df_slope_m_40 = df_male_40['slope']
+    slope_m_40 = df_slope_m_40.value_counts()
+    slope_m_40 = slope_m_40.to_json()
+    # feamle <40
+    df_female_40 = df[(df['age'] > 40) & (df['sex'] == 0)]
+    df_slope_f_40 = df_female_40['slope']
+    slope_f_40 = df_slope_f_40.value_counts()
+    slope_f_40 = slope_f_40.to_json()
+    slope_dataset = {"male":{"<40": slope_m_40,"40-60": slope_m_4060, ">60": slope_m_60},"female":{"<40": slope_f_40,"40-60": slope_f_4060, ">60": slope_f_60}}
+    print(slope_dataset)
+
+def flourosopy(df):
+    # male>60
+    df_male_60 = df[(df['age'] > 60) & (df['sex'] == 1)]
+    df_flourosopy_m_60 = df_male_60['flourosopy']
+    flourosopy_m_60 = df_flourosopy_m_60.value_counts()
+    flourosopy_m_60 = flourosopy_m_60.to_json()
+    # female>60
+    df_female_60 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_flourosopy_f_60 = df_female_60['flourosopy']
+    flourosopy_f_60 = df_flourosopy_f_60.value_counts()
+    flourosopy_f_60 = flourosopy_f_60.to_json()
+
+    #  male 40-60
+    df_male_4060 = df[(df['age'] <= 60) & (df["age"] >=40) & (df['sex'] == 1)]
+    df_flourosopy_m_4060 = df_male_4060['flourosopy']
+    flourosopy_m_4060 = df_flourosopy_m_4060.value_counts()
+    flourosopy_m_4060 = flourosopy_m_4060.to_json()
+    # feamle 40-60
+    df_female_4060 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_flourosopy_f_4060 = df_female_4060["flourosopy"]
+    flourosopy_f_4060 = df_flourosopy_f_4060.value_counts()
+    flourosopy_f_4060 = flourosopy_f_4060.to_json()
+    # male <40
+    df_male_40 = df[(df['age'] < 40) & (df['sex'] == 1)]
+    df_flourosopy_m_40 = df_male_40['flourosopy']
+    flourosopy_m_40 = df_flourosopy_m_40.value_counts()
+    flourosopy_m_40 = flourosopy_m_40.to_json()
+    # feamle <40
+    df_female_40 = df[(df['age'] > 40) & (df['sex'] == 0)]
+    df_flourosopy_f_40 = df_female_40['flourosopy']
+    flourosopy_f_40 = df_flourosopy_f_40.value_counts()
+    flourosopy_f_40 = flourosopy_f_40.to_json()
+    flourosopy_dataset = {"male":{"<40": flourosopy_m_40,"40-60": flourosopy_m_4060, ">60": flourosopy_m_60},"female":{"<40": flourosopy_f_40,"40-60": flourosopy_f_4060, ">60": flourosopy_f_60}}
+    print(flourosopy_dataset)
+
+def thal(df):
+    # male>60
+    df_male_60 = df[(df['age'] > 60) & (df['sex'] == 1)]
+    df_thal_m_60 = df_male_60['thal']
+    thal_m_60 = df_thal_m_60.value_counts()
+    thal_m_60 = thal_m_60.to_json()
+    # female>60
+    df_female_60 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_thal_f_60 = df_female_60['thal']
+    thal_f_60 = df_thal_f_60.value_counts()
+    thal_f_60 = thal_f_60.to_json()
+
+    #  male 40-60
+    df_male_4060 = df[(df['age'] <= 60) & (df["age"] >=40) & (df['sex'] == 1)]
+    df_thal_m_4060 = df_male_4060['thal']
+    thal_m_4060 = df_thal_m_4060.value_counts()
+    thal_m_4060 = thal_m_4060.to_json()
+    # feamle 40-60
+    df_female_4060 = df[(df['age'] > 60) & (df['sex'] == 0)]
+    df_thal_f_4060 = df_female_4060["thal"]
+    thal_f_4060 = df_thal_f_4060.value_counts()
+    thal_f_4060 = thal_f_4060.to_json()
+    # male <40
+    df_male_40 = df[(df['age'] < 40) & (df['sex'] == 1)]
+    df_thal_m_40 = df_male_40['thal']
+    thal_m_40 = df_thal_m_40.value_counts()
+    thal_m_40 = thal_m_40.to_json()
+    # feamle <40
+    df_female_40 = df[(df['age'] > 40) & (df['sex'] == 0)]
+    df_thal_f_40 = df_female_40['thal']
+    thal_f_40 = df_thal_f_40.value_counts()
+    thal_f_40 = thal_f_40.to_json()
+    thal_dataset = {"male":{"<40": thal_m_40,"40-60": thal_m_4060, ">60": thal_m_60},"female":{"<40": thal_f_40,"40-60": thal_f_4060, ">60": thal_f_60}}
+    print(thal_dataset)
+
 if __name__ == "__main__":
     df = clean_data()
     # chest(df)
@@ -202,5 +342,10 @@ if __name__ == "__main__":
     # cholestoral(df)
     # heart_rate(df)
     # oldpeak(df)
-    sugar(df)
-    cardiographic(df)
+    # sugar(df)
+    # cardiographic(df)
+    # angina(df)
+    # slope(df)
+    # flourosopy(df)
+    thal(df)
+    
