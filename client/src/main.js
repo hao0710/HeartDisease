@@ -18,6 +18,11 @@ import CholestoralVueScatter from './components/utilComponents/CholestoralVueSca
 import HeartRateVueScatter from './components/utilComponents/HeartRateVueScatter.vue';
 import OldpeakVueScatter from './components/utilComponents/OldpeakVueScatter.vue';
 import ChestPainVueBar from './components/utilComponents/ChestPainVueBar.vue';
+import FastBloodSugarVueBar from './components/utilComponents/FastBloodSugarVueBar.vue';
+import CardiographicVueBar from './components/utilComponents/CardiographicVueBar.vue';
+import AnginaVueBar from './components/utilComponents/AnginaVueBar.vue';
+import SlopeVueBar from './components/utilComponents/SlopeVueBar.vue';
+import FlourosopyPainVueBar from './components/utilComponents/FlourosopyPainVueBar.vue';
 import Requestdata from './components/utilComponents/Requestdata.vue';
 import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
@@ -44,7 +49,11 @@ Vue.component('CholestoralVueScatter', CholestoralVueScatter);
 Vue.component('HeartRateVueScatter', HeartRateVueScatter);
 Vue.component('OldpeakVueScatter', OldpeakVueScatter);
 Vue.component('ChestPainVueBar', ChestPainVueBar);
-
+Vue.component('FastBloodSugarVueBar', FastBloodSugarVueBar);
+Vue.component('CardiographicVueBar', CardiographicVueBar);
+Vue.component('AnginaVueBar', AnginaVueBar);
+Vue.component('SlopeVueBar', SlopeVueBar);
+Vue.component('FlourosopyPainVueBar', FlourosopyPainVueBar);
 
 
 

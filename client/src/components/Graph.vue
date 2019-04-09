@@ -46,11 +46,42 @@ age and sex">
       </div>
       <div class="col-md-6">
           <div class="tile">
-              <h3 class="tile-title">Oldpeak</h3>
-              <OldpeakVueScatter></OldpeakVueScatter>
+              <h3 class="tile-title">Fasting Blood Sugar > 120 mg/dl</h3>
+              <FastBloodSugarVueBar></FastBloodSugarVueBar>
           </div>
       </div>
   </div>
+
+  <div class="row">
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Resting Electrocardiographic Results</h3>
+              <CardiographicVueBar></CardiographicVueBar>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Exercise Induced Angina</h3>
+              <AnginaVueBar></AnginaVueBar>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">The Slope of the Peak Exercise ST segment</h3>
+              <SlopeVueBar></SlopeVueBar>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Number of Major Vessels (0-3) colored by Flourosopy</h3>
+              <FlourosopyPainVueBar></FlourosopyPainVueBar>
+          </div>
+      </div>
+  </div>
+
 
   
     <p>{{ msg }}</p>

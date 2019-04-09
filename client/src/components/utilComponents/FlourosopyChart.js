@@ -2,7 +2,7 @@
 export const data = {
   labels: ['20-40', '40-60', '60+',],
   datasets: [{
-    label: '# female typical',
+    label: '# female 0',
     data: [1, 2, 3],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
@@ -18,7 +18,7 @@ export const data = {
     ],
     borderWidth: 3,
   },{
-    label: '# female atypical',
+    label: '# female 1',
     data: [7, 8, 9],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
@@ -34,7 +34,7 @@ export const data = {
     ],
     borderWidth: 3,
   },{
-    label: '# female non-anginal',
+    label: '# female 2',
     data: [13, 14, 15],
     backgroundColor: [
       'rgba(153, 102, 255, 0.5)',
@@ -51,7 +51,7 @@ export const data = {
     borderWidth: 3,
   },
   {
-    label: '# female asymptomatic',
+    label: '# female 3',
     data: [19, 20, 21],
     backgroundColor: [
       'rgba(255, 159, 64, 0.5)',
@@ -69,7 +69,7 @@ export const data = {
     borderWidth: 3,
   },
   {
-    label: '# male typical',
+    label: '# male 0',
     data: [4, 5, 6],
     backgroundColor: [
       'rgba(255, 206, 86, 1)',
@@ -85,7 +85,7 @@ export const data = {
     ],
     borderWidth: 3,
   },{
-    label: '# male atypical',
+    label: '# male 1',
     data: [10, 11, 12],
     backgroundColor: [
       'rgba(75, 192, 192, 0.5)',
@@ -101,7 +101,7 @@ export const data = {
     ],
     borderWidth: 3,
   },{
-    label: '# male non-anginal',
+    label: '# male 2',
     data: [16, 17, 18],
     backgroundColor: [
       'rgba(153, 102, 255, 0.5)',
@@ -118,7 +118,7 @@ export const data = {
     borderWidth: 3,
   },
   {
-    label: '# male asymptomatic',
+    label: '# male 3',
     data: [22, 23, 24],
     backgroundColor: [
       'rgba(255, 159, 64, 0.5)',
