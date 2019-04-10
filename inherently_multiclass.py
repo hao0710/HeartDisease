@@ -491,8 +491,6 @@ def decosion_tree_selected_feature():
     global test_score
     test_score.append(clf.score(x_test,y_test))
 
-naive_bayess_selected_feature()
-print(test_score)
 
 
 
