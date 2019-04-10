@@ -250,7 +250,10 @@
           </div>
           <br>
           <div class="aaa">
-          <b-button @click="onSubmit" type="submit" variant="info">Submit</b-button>
+          <b-button @click="onSubmit" type="submit" variant="info" v-b-modal.modal-1>Submit</b-button>
+          <b-modal id="modal-1" title="Your Thal Result is" v-if="loaded">
+              <p class="my-4">{{ result }}</p>
+          </b-modal>
           </div>
           <br>
         </div>
@@ -265,12 +268,14 @@ import axios from "axios";
 export default {
   data() {
     return {
+      result:[],
       selected: "1",
       age: "",
       bloodpressure: "",
       cholestoral: "",
       heart_rate: "",
       oldpeak: "",
+      loaded: false,
       options_1: [{ text: "Male", value: "1" }, { text: "Female", value: "0" }],
       selected_pain: "1",
       options_2: [
@@ -338,9 +343,29 @@ export default {
         selected_electrocardiographic: this.selected_electrocardiographic
       };
       this.addBook(payload);
+      this.getMessage();
+      this.getMessage();
+      this.getMessage();
+      this.getMessage();
+      this.getMessage();
+      this.getMessage();
+    },
+    getMessage() {
+      const path = 'http://localhost:5000/datasets/submit';
+      axios.get(path)
+        .then((res) => {
+          this.result = res.data.result;
+          this.loaded = true
+        })
+        .catch((error) => {
+          // eslint-disable-next-line
+          console.error(error);
+        });
     }
   },
-
+  // created() {
+  //   this.getMessage();
+  // },
   computed: {
     ageState() {
       return this.age >= 35 && this.age <= 74 ? true : false;
@@ -358,6 +383,7 @@ export default {
       return this.oldpeak > 0 && this.oldpeak <= 10 ? true : false;
     }
   }
+  
 };
 </script>
 

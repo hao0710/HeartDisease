@@ -468,6 +468,10 @@ def submit():
   http://www.cvdcheck.org.au/calculator/
 
 
+## 36. after submit how to wait for seconds get the data
+  now call getMessage() function several times to get data
+
+   TODO:  havent't figure out yet!!!
 
 
 
