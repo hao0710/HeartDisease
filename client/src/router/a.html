@@ -1,0 +1,268 @@
+<section class="o-section">
+    <div class="o-grid o-grid--center">
+        <div class="o-col o-col--5">
+            <div class="o-col__inner">
+                <p>Enter patient information below</p>
+                <form class="c-form-stepper" selector=".js-calculator">
+                    <div class="c-form-stepper__container">
+                        <div>
+                            <div class="c-form-stepper__frame">
+                                <div class="c-form-stepper__inner">
+                                    <ul class="c-form-stepper__fields">
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="gender">Gender</label>
+                                            <div>
+                                                <div class="c-form-radio undefined"><input class="c-form-radio__input"
+                                                        type="radio" name="gender" selector=".js-calculator"
+                                                        id="gender-female" label="[object Object]" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" value="Female"><label class="c-form-radio__label" for="gender-female"><span><svg
+                                                                viewBox="0 0 500 500">
+                                                                <path class="st0"
+                                                                    d="M438.1 484.5H61.9v-17.9c.1-1.6 2.9-51.5 92.6-80.4 0 0 10.4-5.3 20.8-11.6 8.6-5.2 15.3-9.8 20.4-13.7 2.6 5.5 6.2 12.5 10.7 19.6 13.6 21.2 28.3 31.9 43.6 31.9s30.1-10.7 43.6-31.9c4.6-7.1 8.2-14.1 10.7-19.6 5.3 4.2 12.3 8.8 20.7 14 10.2 6.3 20.5 11.4 20.5 11.4 26.2 8.3 61.6 24 80.8 51.4 11 15.7 11.7 28.3 11.7 29v17.8zM206.2 327.1c13.6 5.3 28.3 7.9 43.8 7.9 15.5 0 30.2-2.7 43.8-7.9v19.4c-1.5 3.6-6.1 14.7-13.2 25.6-7.3 11.3-18.5 24.8-30.6 24.8-12.1 0-23.3-13.4-30.5-24.6-7.1-11-11.8-22.2-13.3-25.8v-19.4zm91.8-18.8c-14.4 7.5-30.5 11.3-48 11.3s-33.6-3.8-48-11.3c-17.5-9-32.1-23.4-42.2-41.7-10.1-18.3-15.5-40.1-15.5-63v-70.4c14.9-1.9 49.8-7.4 71.7-19.8h67.6c18.4 12.4 56 18 72.1 19.8v70.4c0 22.9-5.4 44.7-15.5 63-10.1 18.2-24.7 32.6-42.2 41.7zm-179.4-78.9v-97.9c0-64 52-116 116-116h30.9c64 0 116 52 116 116v97.9c0 33.1-3.6 60.6-10.8 81.8-8.5 25.1-22.1 41.4-40.5 48.6-9.4-5.8-16.6-11-20.8-15v-25c18.4-10.5 33.7-26.2 44.4-45.6 11.4-20.6 17.4-45 17.4-70.5v-84.4l-7-.6c-15.4-1.4-58.5-7.5-73.3-19l-2.1-1.6h-77l-1.8 1.1c-24.3 14.8-73.5 19.5-74 19.5l-7 .7v84.4c0 25.5 6 49.9 17.4 70.5 10.8 19.4 26 35.1 44.4 45.6V345c-4 3.8-10.9 8.8-20.4 14.7-24.4-10-51.8-40.8-51.8-130.3zm232.3 142.3c-.8-.4-2.5-1.3-4.8-2.6 33.7-19.6 50.8-66.5 50.8-139.8v-97.9C396.9 59 337.9 0 265.5 0h-30.9c-72.5 0-131.4 59-131.4 131.4v97.9c0 71.7 17.7 119.4 51.3 139.4-2.5 1.4-4.5 2.4-5.4 2.9-100.5 32.7-102.7 92.2-102.7 94.8V500h407.2v-33.5c0-2.6-1.5-62.5-102.7-94.8z">
+                                                                </path>
+                                                                <path class="st0"
+                                                                    d="M257.7 193.3h-15.5v41.2c0 4.3 3.5 7.7 7.7 7.7h20.6v-15.5h-12.9v-33.4z">
+                                                                </path>
+                                                            </svg>Female</span></label></div>
+                                                <div class="c-form-radio undefined"><input class="c-form-radio__input"
+                                                        type="radio" name="gender" selector=".js-calculator"
+                                                        id="gender-male" label="[object Object]" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" value="Male"><label class="c-form-radio__label" for="gender-male"><span><svg
+                                                                viewBox="0 0 500 500">
+                                                                <path class="st0"
+                                                                    d="M438.1 484.5H61.9v-17.9c0-.9.9-13.3 11.9-28.9 19.4-27.4 54.5-43.1 80.6-51.5 0 0 29.3-15.3 43.8-27.4 6.8 6.4 19.2 16.1 35.3 20.4L193 419.8l10.9 10.9 46.1-46.1 46.1 46.1 10.9-10.9-40.6-40.6c16.2-4.3 28.6-14.1 35.3-20.4 14.4 12.1 43.8 27.4 43.8 27.4 26.2 8.3 61.6 24 80.8 51.4 11 15.7 11.7 28.3 11.7 29l.1 17.9zM145.6 222.8c-.8-6-1.3-12.4-1.3-19.2v-50c16.9-2.8 61-12.1 95.7-38.4 16.5 11 71.3 45.5 115.6 49.3v39c0 6.8-.4 13.3-1.3 19.3-5.3 38.5-25.9 69.6-56.4 85.4-14.4 7.5-30.5 11.3-48 11.3s-33.6-3.8-48-11.3c-30.4-15.7-51-46.8-56.3-85.4zm-32.2-29.5c0-3.3 1.7-10.5 15.5-12.4 0 0 .1 29 .3 32-9-4.7-15.8-13.3-15.8-19.6zm56.5-146.7c23.2-20.7 50.2-31.2 80.1-31.2s56.9 10.5 80.1 31.2c14.4 12.8 22.9 25.8 25.5 30.2V149c-45.8-4.6-107.3-46.8-111.3-49.6-2.1-1.7-21.8-18.1-34.6-34.7l-12.2 9.5c9.5 12.3 22 24 29.9 31-29.6 21-66.6 29.6-83.1 32.6v-61c2.7-4.4 11.2-17.4 25.6-30.2zm216.7 146.7c0 6.3-6.8 14.9-15.7 19.7.2-3.1.3-32 .3-32 13.7 1.8 15.4 9 15.4 12.3zM246.9 365.9c-20.1-1.4-35.7-15.7-40.7-20.9v-17.8c13.6 5.3 28.3 7.9 43.8 7.9 15.5 0 30.2-2.7 43.8-7.9V345c-5 5.3-20.5 19.5-40.7 20.9h-6.2zm104 5.8c-9.2-4.9-31.9-17.7-41.6-26.9v-25.1c31.3-17.9 52.7-50 59.6-89.4 17.7-5.1 33.2-21.7 33.2-37.1 0-15.5-11.7-25.8-30.9-27.9V72.8l-.9-1.7c-.4-.7-9.9-18.1-29.4-35.6C315 12.3 283.5 0 250 0s-65 12.3-90.9 35.5c-19.5 17.5-29 34.9-29.4 35.6l-.9 1.7v92.6c-19.3 2.1-30.9 12.4-30.9 27.9 0 15.3 15.4 32 33.2 37.1 6.9 39.3 28.3 71.5 59.6 89.4v25.1c-9.8 9.2-32.5 22.1-41.7 26.9-100.4 32.5-102.6 92-102.6 94.6V500h407.2v-33.5c0-2.6-1.5-62.5-102.7-94.8z">
+                                                                </path>
+                                                                <path class="st0"
+                                                                    d="M239.7 417.5h20.6V433h-20.6zm0 31h20.6V464h-20.6zM250 242.3h20.6v-15.5h-12.9v-33.5h-15.5v41.2c.1 4.3 3.5 7.8 7.8 7.8z">
+                                                                </path>
+                                                            </svg>Male</span></label></div>
+                                            </div>
+                                        </li>
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="age">Age</label>
+                                            <div class="c-form-text"><input id="age" step="" type="number"
+                                                    selector=".js-calculator" name="age" label="Age"
+                                                    placeholder="Between 35 - 74" info="" value=""><label
+                                                    class="c-form-text__suffix" for="age">years</label></div>
+                                        </li>
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="bloodPressure">Systolic Blood Pressure</label>
+                                            <div class="c-form-text"><input id="bloodPressure" step="" type="number"
+                                                    selector=".js-calculator" name="bloodPressure"
+                                                    label="Systolic Blood Pressure" placeholder="75 or more" info=""
+                                                    value=""><label class="c-form-text__suffix"
+                                                    for="bloodPressure">mmHg</label></div>
+                                        </li>
+                                        <div class="u-spacing-top-medium"></div>
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="smoker">Smoking Status</label>
+                                            <p class="c-form-info">Smoker is defined as currently smoking or quit within
+                                                last year</p>
+                                            <div>
+                                                <div class="c-form-radio undefined"><input class="c-form-radio__input"
+                                                        type="radio" name="smoker" selector=".js-calculator"
+                                                        id="smoker-yes" label="Yes" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="Smoker is defined as currently smoking or quit within last year" shrinklabel="" value="Yes"><label
+                                                        class="c-form-radio__label" for="smoker-yes">Yes</label></div>
+                                                <div class="c-form-radio undefined"><input class="c-form-radio__input"
+                                                        type="radio" name="smoker" selector=".js-calculator"
+                                                        id="smoker-no" label="No" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="Smoker is defined as currently smoking or quit within last year" shrinklabel="" value="No"><label
+                                                        class="c-form-radio__label" for="smoker-no">No</label></div>
+                                            </div>
+                                        </li>
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="cholesterol">Total cholesterol</label>
+                                            <div class="c-form-text"><input id="cholesterol" step="any" type="number"
+                                                    selector=".js-calculator" name="cholesterol"
+                                                    label="Total cholesterol" placeholder="2 or more" info=""
+                                                    value=""><label class="c-form-text__suffix"
+                                                    for="cholesterol">mmol/L</label></div>
+                                        </li>
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="hdlCholesterol">HDL cholesterol</label>
+                                            <div class="c-form-text"><input id="hdlCholesterol" step="any" type="number"
+                                                    selector=".js-calculator" name="hdlCholesterol"
+                                                    label="HDL cholesterol" placeholder="Between 0.2 - 5" info=""
+                                                    value=""><label class="c-form-text__suffix"
+                                                    for="hdlCholesterol">mmol/L</label></div>
+                                        </li>
+                                        <li class="c-form-stepper__field"><label class="c-form-label"
+                                                for="diabetes">Diabetes</label>
+                                            <div>
+                                                <div class="c-form-radio undefined"><input class="c-form-radio__input"
+                                                        type="radio" name="diabetes" selector=".js-calculator"
+                                                        id="diabetes-yes" label="Yes" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" value="Yes"><label class="c-form-radio__label" for="diabetes-yes">Yes</label></div>
+                                                <div class="c-form-radio undefined"><input class="c-form-radio__input"
+                                                        type="radio" name="diabetes" selector=".js-calculator"
+                                                        id="diabetes-no" label="No" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" value="No"><label class="c-form-radio__label" for="diabetes-no">No</label></div>
+                                            </div>
+                                        </li>
+                                        <li class="c-form-stepper__field"><label class="c-form-label" for="ecgLvh">ECG
+                                                LVH</label>
+                                            <div>
+                                                <div class="c-form-radio c-form-radio--third"><input
+                                                        class="c-form-radio__input" type="radio" name="ecgLvh"
+                                                        selector=".js-calculator" id="ecgLvh-yes" label="Yes" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" extraclass="c-form-radio--third" value="Yes"><label class="c-form-radio__label"
+                                                        for="ecgLvh-yes">Yes</label></div>
+                                                <div class="c-form-radio c-form-radio--third"><input
+                                                        class="c-form-radio__input" type="radio" name="ecgLvh"
+                                                        selector=".js-calculator" id="ecgLvh-no" label="No" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" extraclass="c-form-radio--third" value="No"><label class="c-form-radio__label"
+                                                        for="ecgLvh-no">No</label></div>
+                                                <div class="c-form-radio c-form-radio--third"><input
+                                                        class="c-form-radio__input" type="radio" name="ecgLvh"
+                                                        selector=".js-calculator" id="unknown" label="Unknown" validate="function isRequired(value) {
+    return value ? undefined : 'This field is required';
+  }" info="" shrinklabel="" extraclass="c-form-radio--third" value="unknown"><label class="c-form-radio__label"
+                                                        for="unknown">Unknown</label></div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                    <div class="c-form-stepper__actions"><button class="c-button" type="submit"
+                                            disabled="">Calculate</button></div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </form><button class="c-button c-button--secondary u-spacing-top-small">Reset</button>
+                <div class="u-spacing-top-medium">
+                    <div class="c-panel false false"><button class="c-panel__header" type="button"><span
+                                class="c-panel__header-inner">Disclaimer</span><span class="c-arrow"></span></button>
+                        <div class="c-panel__content">
+                            <p>This Australian Absolute cardiovascular disease risk calculator has been produced by the
+                                National Vascular Disease Prevention Alliance for the information of health
+                                professionals. The statements and recommendations it contains are, unless labelled as
+                                'expert opinion', based on independent review of the available evidence. Interpretation
+                                of the results of this calculator by those without appropriate medical and/or clinical
+                                training is not recommended, other than at the request of, or in consultation with, a
+                                relevant health professional.</p>
+                            <p>While care has been taken in preparing the content of this material, the National
+                                Vascular Disease Prevention Alliance and their employees cannot accept any liability,
+                                including for any loss or damage, resulting from the reliance on the content, or for its
+                                accuracy, currency and completeness. This material may be found in third parties'
+                                programs or materials. This does not imply an endorsement or recommendation by the
+                                National Vascular Disease Prevention Alliance for such third parties' organisations,
+                                products or services, including these parties' materials or information. Any use of
+                                National Vascular Disease Prevention Alliance material by another person or organisation
+                                is done so at the user's own risk. The entire contents of this material are subject to
+                                copyright protection.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+
+
+<div class="container">
+    <div class="row">
+      <div class="col">
+        1 of 2
+      </div>
+      <div class="col">
+        2 of 2
+      </div>
+    </div>
+    <div class="row">
+      <div class="col">
+        1 of 3
+      </div>
+      <div class="col">
+        2 of 3
+      </div>
+      <div class="col">
+        3 of 3
+      </div>
+    </div>
+</div>
+
+
+
+<div class="btn-group btn-group-toggle" data-toggle="buttons">
+    <label class="btn btn-secondary active">
+        <input type="radio" name="options" id="option1" autocomplete="off" checked> Active
+    </label>
+    <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option2" autocomplete="off"> Radio
+    </label>
+    <label class="btn btn-secondary">
+        <input type="radio" name="options" id="option3" autocomplete="off"> Radio
+    </label>
+</div>
+
+
+<div>
+    <hr>
+    <hr>
+    <b-jumbotron header="Heart Disease Analysis" lead="Predict heart disease using machine learning"></b-jumbotron>
+    <!--<p>{{ data }}</p>-->
+    <div class="container">
+        <p>Enter patient information below</p>
+        <label class="c-form-label" for="gender">Gender</label>
+        <br>
+        <!-- <div class="btn-group btn-group-toggle" data-toggle="buttons">
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option2" autocomplete="off" checked>  Male  
+        </label>
+        <label class="btn btn-secondary">
+          <input type="radio" name="options" id="option3" autocomplete="off"> Female
+        </label>
+      </div> -->
+        <!-- <div class="row">
+            <div class="col">
+                1 of 2
+            </div>
+            <div class="col">
+                2 of 2
+            </div>
+      </div>-->
+        <h5 class="mt-3">Gender</h5>
+        <b-button-group>
+            <b-button :pressed.sync="myToggle" variant="primary">Toggle Me</b-button>
+            <p>Pressed State: <strong>{{ myToggle }}</strong></p>
+            <b-button-group>
+                <br>
+                <label class="c-form-label" for="age">Age</label>
+    </div>
+
+    <br>
+
+    <br>
+    <label class="c-form-label" for="bloodPressure">Systolic Blood Pressure</label>
+</div>
+
+
+<div>
+    <hr>
+    <hr>
+    <b-jumbotron header="Heart Disease Analysis" lead="Predict heart disease using machine learning"></b-jumbotron>
+    <!--<p>{{ data }}</p>-->
+    <div class="container">
+        <p>Enter patient information below</p>
+        <label class="c-form-label" for="gender">Gender</label>
+        <br>
+        <b-form-radio-group id="btn-radios-1" v-model="selected" :options="options" buttons name="radios-btn-default">
+        </b-form-radio-group>
+        <br>
+        <label class="c-form-label" for="age">Age</label>
+    </div>
+
+    <br>
+
+    <br>
+    <label class="c-form-label" for="bloodPressure">Systolic Blood Pressure</label>
+</div>
