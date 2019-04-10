@@ -33,9 +33,27 @@ def thal_feature_selection():
     fig=plt.figure(figsize=(10,10))
     plt.suptitle('feature_selection_for_thal')
     print(model.feature_importances_)
+    plt.xlabel('importance factor')
+    plt.ylabel('feature')
     #plot graph of feature importances for better visualization
     feat_importances = pd.Series(model.feature_importances_, index=x.columns)
     feat_importances.nlargest(10).plot(kind='barh')
     plt.show()
     fig.savefig('selected_feature_for_thal')
 
+def heat_disease_feature_selection():
+    data=clean_data()
+    x=data.drop(['target'],axis=1)
+    y=data['target']
+    model = ExtraTreesClassifier()
+    model.fit(x,y)
+    fig=plt.figure(figsize=(10,10))
+    plt.suptitle('selected_feature_for_heart_disease')
+    plt.xlabel('importance factor')
+    plt.ylabel('feature')
+    print(model.feature_importances_)
+    #plot graph of feature importances for better visualization
+    feat_importances = pd.Series(model.feature_importances_, index=x.columns)
+    feat_importances.nlargest(16).plot(kind='barh')
+    plt.show()
+    fig.savefig('selected_feature_for_heart_disease')
