@@ -23,6 +23,8 @@ import CardiographicVueBar from './components/utilComponents/CardiographicVueBar
 import AnginaVueBar from './components/utilComponents/AnginaVueBar.vue';
 import SlopeVueBar from './components/utilComponents/SlopeVueBar.vue';
 import FlourosopyPainVueBar from './components/utilComponents/FlourosopyPainVueBar.vue';
+import SexVuePie from './components/utilComponents/SexVuePie.vue';
+import ThalVuePie from './components/utilComponents/ThalVuePie.vue';
 import Requestdata from './components/utilComponents/Requestdata.vue';
 import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
@@ -54,6 +56,10 @@ Vue.component('CardiographicVueBar', CardiographicVueBar);
 Vue.component('AnginaVueBar', AnginaVueBar);
 Vue.component('SlopeVueBar', SlopeVueBar);
 Vue.component('FlourosopyPainVueBar', FlourosopyPainVueBar);
+Vue.component('SexVuePie', SexVuePie);
+Vue.component('ThalVuePie', ThalVuePie);
+
+
 
 
 

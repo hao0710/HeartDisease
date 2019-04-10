@@ -10,6 +10,21 @@ age and sex">
   <div class="row">
       <div class="col-md-6">
           <div class="tile">
+              <h3 class="tile-title">Gender</h3>
+              <SexVuePie></SexVuePie>
+          </div>
+      </div>
+      <div class="col-md-6">
+          <div class="tile">
+              <h3 class="tile-title">Thalassemia</h3>
+              <ThalVuePie></ThalVuePie>
+          </div>
+      </div>
+  </div>
+
+  <div class="row">
+      <div class="col-md-6">
+          <div class="tile">
               <h3 class="tile-title">Resting Blood Pressure</h3>
               <BloodPressureVueScatter></BloodPressureVueScatter>
           </div>
@@ -84,7 +99,7 @@ age and sex">
 
 
   
-    <p>{{ msg }}</p>
+    <!-- <p>{{ msg }}</p> -->
     <router-link to="/stats">Go to stats</router-link>
     <router-view/>
   </div>
