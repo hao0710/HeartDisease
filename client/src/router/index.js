@@ -7,6 +7,8 @@ import Stats from '@/components/Stats';
 import Predict from '@/components/Predict';
 import Test from '@/components/Test';
 import Graph from '@/components/Graph';
+import Models from '@/components/Models';
+import About from '@/components/About';
 
 Vue.use(Router);
 
@@ -46,6 +48,16 @@ export default new Router({
       path: '/graph',
       name: 'Graph',
       component: Graph,
+    },
+    {
+      path: '/models',
+      name: 'Models',
+      component: Models,
+    },
+    {
+      path: '/about',
+      name: 'About',
+      component: About,
     },
   ],
 });

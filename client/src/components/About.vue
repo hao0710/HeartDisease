@@ -2,40 +2,46 @@
   <div>
     <!--<Carousel></Carousel>-->
     <!--<Navbar></Navbar>-->
-  <hr>
-  <hr>
-  <div>
-  <b-jumbotron header="Heart Disease Analysis" lead="Predict heart disease using machine learning">
-    <b-button variant="primary" href="#/predict">Predict</b-button>
-  </b-jumbotron>
-</div>
+    <hr>
+    <hr>
+    <div>
+      <b-jumbotron
+        header="Heart Disease Analysis"
+        lead="Predict heart disease using machine learning"
+      >
+        <b-button variant="primary" href="#/predict">Predict</b-button>
+      </b-jumbotron>
+    </div>
     <div class="row">
       <div class="col-md-6">
         <div class="tile">
           <div class="container">
-            <CardHome></CardHome>
+            <CardAbout></CardAbout>
           </div>
         </div>
       </div>
     </div>
+
+    <!-- <p>{{ msg }}</p>
+    <router-link to="/stats">Go to stats</router-link> -->
     <router-view/>
   </div>
 </template>
 
 <script>
-
 export default {
-  name: 'Home',
+  name: "Home",
   data() {
     return {
-      msg: 'I am the home component',
+      msg: "I am the home component"
     };
-  },
+  }
 };
 </script>
 
 <style scoped>
-h1, h2 {
+h1,
+h2 {
   font-weight: normal;
 }
 ul {
@@ -70,5 +76,4 @@ li {
   align-items: center;
   justify-content: center;
 }
-
 </style>

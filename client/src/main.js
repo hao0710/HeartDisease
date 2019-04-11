@@ -25,6 +25,9 @@ import SlopeVueBar from './components/utilComponents/SlopeVueBar.vue';
 import FlourosopyPainVueBar from './components/utilComponents/FlourosopyPainVueBar.vue';
 import SexVuePie from './components/utilComponents/SexVuePie.vue';
 import ThalVuePie from './components/utilComponents/ThalVuePie.vue';
+import CardHome from './components/utilComponents/CardHome.vue';
+import CardModels from './components/utilComponents/CardModels.vue';
+import CardAbout from './components/utilComponents/CardAbout.vue';
 import Requestdata from './components/utilComponents/Requestdata.vue';
 import Carousel from './components/Carousel.vue';
 import VueCharts from 'vue-chartjs';
@@ -58,6 +61,10 @@ Vue.component('SlopeVueBar', SlopeVueBar);
 Vue.component('FlourosopyPainVueBar', FlourosopyPainVueBar);
 Vue.component('SexVuePie', SexVuePie);
 Vue.component('ThalVuePie', ThalVuePie);
+Vue.component('CardHome', CardHome);
+Vue.component('CardModels', CardModels);
+Vue.component('CardAbout', CardAbout);
+
 
 
 
