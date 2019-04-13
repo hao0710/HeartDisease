@@ -31,7 +31,7 @@ def naive_bayess_selected_feature():
     # x_train,x_test,y_train,y_test=train_test_split(x,y,test_size=0.3,random_state=5)
     clf = GaussianNB().fit(x,y)
     filename='final_model.sav'
-    pickle.dump(lr,open(filename,'wb'))
+    pickle.dump(clf,open(filename,'wb'))
     # print(name)
     # print(clf.predict(x_test))
 
