@@ -41,7 +41,7 @@
               <!-- This will only be shown if the preceding input has an invalid state -->
               <b-form-invalid-feedback
                 id="input-live-feedback"
-              >Please enter an age beteen 35-74 years</b-form-invalid-feedback>
+              >Please enter an age beteen 0-100 years</b-form-invalid-feedback>
 
               <!-- This is a form text block (formerly known as help block) -->
               <!--<b-form-text id="input-live-help">Your age.</b-form-text>-->
@@ -368,7 +368,7 @@ export default {
   // },
   computed: {
     ageState() {
-      return this.age >= 35 && this.age <= 74 ? true : false;
+      return this.age > 0 && this.age <= 100 ? true : false;
     },
     bloodpressureState() {
       return this.bloodpressure > 0 && this.bloodpressure <= 300 ? true : false;
