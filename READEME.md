@@ -17,3 +17,15 @@ Aprial 10th 2018,
 now we change to predict the thal
 for tutor assess my accurancy, run my read_model.py
 use_model.py is for front end
+
+
+
+Final version submission
+
+1.Drag the test data to the Data/heart folder.
+
+To re-generate my final model. First remove final_model.sav 
+
+2.then run final_model.py which will generate my final model again and stored as final_model.sav.
+
+3. Run read_model.py, which will read from the saved model and print the result.
