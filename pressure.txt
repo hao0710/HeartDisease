@@ -1,0 +1,15 @@
+def oldpeak(df):
+    df_male = df[df['sex'] == 1]
+    df_female = df[df['sex'] == 0]
+    male_oldpeak_list = []
+    female_oldpeak_list = []
+    for index,row in df_male[['age', 'oldpeak']].iterrows():
+        for column_name in df_male[['age', 'oldpeak']].columns:
+            male_oldpeak_set = {"x": row['age'],"y": row['oldpeak']}
+            male_oldpeak_list.append(male_oldpeak_set)
+    for index,row in df_female[['age', 'oldpeak']].iterrows():
+        for column_name in df_female[['age', 'oldpeak']].columns:
+            female_oldpeak_set = {"x": row['age'],"y": row['oldpeak']}
+            female_oldpeak_list.append(female_oldpeak_set)
+    oldpeak_dataset = {"male": male_oldpeak_list, "female": female_oldpeak_list}
+    print(oldpeak_dataset)
