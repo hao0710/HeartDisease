@@ -499,6 +499,66 @@ add wrapper
 ```
 
 
+## 5. How to use the gitpod deploy the program
+
+### 1.  add `gitpod.io#` to repo link
+
+### 2. follow the readme.md install requirements
+
+### 3. run the app.py copy the link
+
+### 4. modify client folder
+
+modify  `predict.vue`
+
+```js
+const path = "http://localhost:5000/datasets/submit";
+|
+|
+V
+const path = "https://5000-d4bd5164-a860-4f58-a51c-654a0f22916a.ws-ap0.gitpod.io/datasets/submit";
+```
+
+```js
+ const path = 'http://localhost:5000/datasets/submit';
+ |
+ |
+ V
+ const path = 'https://5000-d4bd5164-a860-4f58-a51c-654a0f22916a.ws-ap0.gitpod.io/datasets/submit';
+```
+
+modify `stats.vue`
+
+```js
+  methods: {
+    getDatasets() {
+      const path = 'https://5000-d4bd5164-a860-4f58-a51c-654a0f22916a.ws-ap0.gitpod.io/datasets';
+      axios.get(path)
+        .then((res) => {
+          this.datasets = res.data.datasets;
+        })
+        .catch((error) => {
+          // eslint-disable-next-line
+          console.error(error);
+        });
+    },
+  },
+```
+
+### 5. modify the path
+```python
+path=os.path.abspath('.')+"\data\heart\processed.cleveland.data"
+|
+|
+V
+path=os.path.abspath('.')+"/data/heart/processed.cleveland.data"
+```
+
+### 6. follow the readme.md in client to run the front
+
+
+
+
 
 ## Reference:
 *https://testdriven.io/blog/developing-a-single-page-app-with-flask-and-vuejs/*
