@@ -577,6 +577,10 @@ eb init
 eb create heart-env
 eb deploy
 ```
+add A record in route53 and config load balancer then open  
+
+https://heart.unicornchatbot.com
+
 
 Reference:
 https://juejin.im/entry/5a4492f86fb9a045186b08c8  

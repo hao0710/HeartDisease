@@ -13,7 +13,7 @@ DEBUG = True
 application = Flask(__name__,static_folder="./dist/static", template_folder="./dist")
 application.config.from_object(__name__)
 
-@application.route("/heart/")
+@application.route("/")
 def home():
     '''
         当在浏览器访问网址时，通过 render_template 方法渲染 dist 文件夹中的 index.html。
