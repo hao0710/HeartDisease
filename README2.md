@@ -557,6 +557,23 @@ path=os.path.abspath('.')+"/data/heart/processed.cleveland.data"
 ### 6. follow the readme.md in client to run the front
 
 
+## how to deploy
+
+```
+cd client  
+npm run build
+```
+then copy folder *dist* to root
+
+then modify the app.py
+
+open localhost:5000
+
+Reference:
+https://juejin.im/entry/5a4492f86fb9a045186b08c8  
+
+https://www.jianshu.com/p/ead7317d01ec
+
 
 
 

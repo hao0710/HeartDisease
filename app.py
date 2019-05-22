@@ -1,4 +1,4 @@
-from flask import Flask, jsonify
+from flask import Flask, jsonify,render_template
 from flask_cors import CORS
 from data.preprocessing import preprocessing
 import json
@@ -10,12 +10,23 @@ from use_model import *
 DEBUG = True
 
 # instantiate the app
-app = Flask(__name__)
+app = Flask(__name__,static_folder="./dist/static", template_folder="./dist")
 app.config.from_object(__name__)
+
+@app.route("/")
+def home():
+    '''
+        当在浏览器访问网址时，通过 render_template 方法渲染 dist 文件夹中的 index.html。
+        页面之间的跳转交给前端路由负责，后端不用再写大量的路由
+    '''
+    return render_template('index.html')
+
 
 # enable CORS
 CORS(app)
 # CORS(app, resources={r"/*": {"origins": "*"}})
+
+
 
 # data
 Datasets =json.loads(preprocessing())
