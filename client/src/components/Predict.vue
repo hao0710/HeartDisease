@@ -315,7 +315,8 @@ export default {
   },
   methods: {
     addBook(payload) {
-      const path = "http://localhost:5000/datasets/submit";
+      // const path = "http://localhost:5000/datasets/submit";
+      const path = "https://heart.unicornchatbot.com/datasets/submit";
       axios
         .post(path, payload)
         .then(function(response) {
@@ -351,7 +352,8 @@ export default {
       this.getMessage();
     },
     getMessage() {
-      const path = 'http://localhost:5000/datasets/submit';
+      // const path = 'http://localhost:5000/datasets/submit';
+      const path = 'https://heart.unicornchatbot.com/datasets/submit';
       axios.get(path)
         .then((res) => {
           this.result = res.data.result;

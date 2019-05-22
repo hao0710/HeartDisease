@@ -579,6 +579,10 @@ eb deploy
 ```
 add A record in route53 and config load balancer then open  
 
+When deploy remember to replace the address in  stats.vue ,predict.vue
+
+Then build and copy dist to root and copy the files in dist folder to root
+
 https://heart.unicornchatbot.com
 
 

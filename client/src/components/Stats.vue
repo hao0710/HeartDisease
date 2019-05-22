@@ -71,7 +71,8 @@ export default {
   },
   methods: {
     getDatasets() {
-      const path = 'http://localhost:5000/datasets';
+      // const path = 'http://localhost:5000/datasets';
+      const path = 'https://heart.unicornchatbot.com/datasets';
       axios.get(path)
         .then((res) => {
           this.datasets = res.data.datasets;
