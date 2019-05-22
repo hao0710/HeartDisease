@@ -10,10 +10,10 @@ from use_model import *
 DEBUG = True
 
 # instantiate the app
-app = Flask(__name__,static_folder="./dist/static", template_folder="./dist")
-app.config.from_object(__name__)
+application = Flask(__name__,static_folder="./dist/static", template_folder="./dist")
+application.config.from_object(__name__)
 
-@app.route("/heart/")
+@application.route("/heart/")
 def home():
     '''
         当在浏览器访问网址时，通过 render_template 方法渲染 dist 文件夹中的 index.html。
@@ -23,7 +23,7 @@ def home():
 
 
 # enable CORS
-CORS(app)
+CORS(application)
 # CORS(app, resources={r"/*": {"origins": "*"}})
 
 
@@ -46,18 +46,18 @@ Datasets_blood=[
 
 
 # sanity check route
-@app.route('/ping', methods=['GET'])
+@application.route('/ping', methods=['GET'])
 def ping_pong():
     return jsonify('pong!')
 
-@app.route('/datasets', methods=['GET'])
+@application.route('/datasets', methods=['GET'])
 def all_datasets():
     return jsonify({
         'status': 'success',
         'datasets': Datasets
     })
 
-@app.route('/datasets/blood', methods=['GET'])
+@application.route('/datasets/blood', methods=['GET'])
 def blood():
     return jsonify({
         'status': 'success',
@@ -67,7 +67,7 @@ def blood():
 
 INFO=[]
 result="none"
-@app.route('/datasets/submit', methods=['GET','POST'])
+@application.route('/datasets/submit', methods=['GET','POST'])
 def submit():  
   global INFO
   global result
@@ -98,4 +98,4 @@ def submit():
     # result="none"
   return jsonify(response_object)
 if __name__ == '__main__':
-    app.run()
+    application.run(debug=True)

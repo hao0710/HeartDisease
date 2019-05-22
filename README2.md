@@ -569,6 +569,15 @@ then modify the app.py
 
 open localhost:5000
 
+copy files in the dist to root folder
+
+```
+cd project-HeartDisease
+eb init
+eb create heart-env
+eb deploy
+```
+
 Reference:
 https://juejin.im/entry/5a4492f86fb9a045186b08c8  
 

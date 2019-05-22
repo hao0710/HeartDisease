@@ -7,7 +7,7 @@ cardiographic={'0.0':"normal",'1.0':"having ST-T",'2.0':"probable or definite"}
 thal={'3.0':"normal",'6.0':"fixed defect",'7.0':"reversable defect",'?':"?"}
 
 import os
-path=os.path.abspath('.')+"\data\heart\processed.cleveland.data"
+path=os.path.abspath('.')+"/data/heart/processed.cleveland.data"
 
 
 def preprocessing():
